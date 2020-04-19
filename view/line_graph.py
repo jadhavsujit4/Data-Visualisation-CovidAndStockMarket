@@ -97,9 +97,9 @@ _line_graph_panel = html.Div(
             className="pretty_container",
         ),
     ],
-    className="eight columns",
+    className="nine columns",
 )
 
 line_graph_panel = html.Div(
-    [_line_graph_control_panel, _line_graph_panel], className="row flex-display",
+    [_line_graph_panel,_line_graph_control_panel], className="row flex-display",
 )

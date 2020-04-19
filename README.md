@@ -61,4 +61,3 @@ To manually update and cache the worldometers.info data:
 
 - zooming is auto-refreshed on hover for all charts
     - could be an issue with the way I'm handling hovering
-# Data-Visualisation-CovidAndStockMarket

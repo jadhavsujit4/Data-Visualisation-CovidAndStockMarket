@@ -79,9 +79,9 @@ _scatter_graph_panel = html.Div(
             className="pretty_container",
         ),
     ],
-    className="eight columns",
+    className="nine columns",
 )
 
 scatter_panel = html.Div(
-    [_scatter_control_panel, _scatter_graph_panel], className="row flex-display",
+    [_scatter_graph_panel, _scatter_control_panel], className="row flex-display",
 )

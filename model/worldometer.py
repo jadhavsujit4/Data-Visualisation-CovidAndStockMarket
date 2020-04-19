@@ -3,13 +3,13 @@ import os
 import re
 from glob import glob
 from typing import List
-import pycountry
+# import pycountry
 import numpy as np
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from dateutil import parser
-import plotly.graph_objects as go
+# import plotly.graph_objects as go
 from model.utils import country_map
 
 logger = logging.getLogger(__name__)
@@ -123,15 +123,15 @@ class WorldOMeterDataFetcher:
                 int(np.mean(df["Urban Population %"])),
             ]
 
-            df = df.sort_values("Total Cases", ascending=False)
-            cnt = 0
-            df["CODE"] = ""
-            for country in df["Country"]:
-                try:
-                    df["CODE"][cnt] = pycountry.countries.search_fuzzy(country)[0].alpha_3
-                except:
-                    df["CODE"][cnt] = "No data found for country"
-                cnt = cnt + 1
+            # df = df.sort_values("Total Cases", ascending=False)
+            # cnt = 0
+            # df["CODE"] = ""
+            # for country in df["Country"]:
+            #     try:
+            #         df["CODE"][cnt] = pycountry.countries.search_fuzzy(country)[0].alpha_3
+            #     except:
+            #         df["CODE"][cnt] = "No data found for country"
+            #     cnt = cnt + 1
 
             return df
 

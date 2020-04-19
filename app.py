@@ -47,6 +47,7 @@ app = dash.Dash(
 )
 server = app.server
 app.layout = app_layout
+app.title = 'Covid-19 and Stock Market Analysis'
 
 
 # dfrel = pd.read_csv("stock_reliance.csv")
